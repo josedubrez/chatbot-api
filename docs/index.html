@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TCC 2022</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/chatbot.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="textos-hero">
+            <h1>Bienvenido a TCC 2022</h1>
+            <p>Su aliado para la transformacion digital de su negocio</p>
+            <a href="#contacto">Contactenos</a>
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+
+
+    <section class="wave-contenedor website">
+        <img src="img/ilustracion1.svg" alt="">
+        <div class="contenedor-textos-main">
+            <h2 class="titulo left">Soluciones digitales</h2>
+            <p class="parrafo">Tranformamos su negocio digitalmente con la soluciones que tenemos preparadas para usted</p>
+            <a href="#services" class="cta">Ver servicios</a>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="contenedor">
+            <h2 class="titulo left">Nos gustaria colaborar con usted</h2>
+            <p>Tenemos muchos servicios que púeden llevar su negocio al siguiente nivel</p>
+        </div>
+    </section>
+
+    <section id="services" class="cards contenedor">
+        <h2 class="titulo">Nuestros servicios</h2>
+        <div class="content-cards">
+            <article class="card">
+                <i class="far fa-clone"></i>
+                <h3>Softwares Corporativos</h3>
+                <p>Los mejores ERP y CRM para su negocio</p>
+                <a href="#services" class="cta">Mas info</a>
+            </article>
+            <article class="card">
+                <i class="fas fa-database"></i>
+                <h3>Almacenamiento en la nube</h3>
+                <p>Sus datos estaran seguros con nosotros</p>
+                <a href="#services" class="cta">Mas info</a>
+            </article>
+            <article class="card">
+                <i class="far fa-object-group"></i>
+                <h3>Landing Page</h3>
+                <p>Preparamos la cara de su negocio en internet</p>
+                <a href="#services" class="cta">Mas info</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="contenedor">
+            <h2 class="titulo">Galeria</h2>
+            <article class="galeria-cont">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/app01_bzqam2.jpg" alt="Aplicacion de contactos" title="Aplicacion de contactos">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/crm_vpdwlh.png" alt="Software CRM" title="Software CRM">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/erp_bpfxk2.jpg" alt="Software ERP" title="Software ERP">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/hosting_wtz9pn.png" alt="Servicio de hosting" title="Servicio de hosting">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/app02_svy2jj.jpg" alt="Aplicacion de proveedores" title="Aplicacion de proveedores">
+                <img src="https://res.cloudinary.com/tcc-chatbot-columbia-2021/image/upload/v1637511917/screenshots/landing_uabaa9.jpg" alt="Desarrollo y manejo de Landing Pages" title="Desarrollo y manejo de Landing Pages">
+            </article>
+        </div>
+    </section>
+
+    <section id="testimonios" class="info-last">
+        <div class="contenedor last-section">
+            <div class="contenedor-textos-main">
+                <h2 class="titulo left">Clientes satisfechos</h2>
+                <p class="parrafo">Tenemos cientos de clientes a lo largo del pais que dan fe de la calidad de nuestro trabajo y del salto tecnologico que consiguieron con nosotros</p>
+                <a href="#testimonios" class="cta">Ver testimonios</a>
+            </div>
+            <img src="img/ilustracion.svg" alt="">
+        </div>
+        
+        <div class="svg-wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #f5576c;"></path>
+        </svg></div>
+    </section>
+
+    <footer id="contacto">
+        <div class="contenedor">
+            <h2 class="titulo">Conversemos</h2>
+            <form action="https://tcc-chatbot-columbia-2021.herokuapp.com/mensajes" method="POST" class="form" id="form">
+                <input class="input"  type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input class="input"  type="email" name="email" id="email" placeholder="Email">
+                <textarea  class="input" name="contenido" id="contenido" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input class="input" type="submit" value="Enviar">
+            </form>
+        </div>
+    </footer>
+
+    <df-messenger
+        intent="Bienvenida"
+        chat-title="Bot Asistente"
+        agent-id="4b832309-6026-4313-b20b-b101d782db2c"
+        language-code="es">
+    </df-messenger>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
